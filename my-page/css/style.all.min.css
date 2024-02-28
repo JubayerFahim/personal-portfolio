@@ -1,0 +1,372 @@
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    box-shadow: 0px 12px 13px 2px rgb(223 217 217 / 50%);
+    z-index: 10;
+}
+nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+}
+.logo-side {
+    width: 200px;
+    position: sticky;
+    top: 10px;
+}
+.logo-side img {
+    width: 100%;
+    height: 100%;
+}
+h2.logo-name {
+    display: inline-block;
+    font-size: 30px;
+    margin: 0px 0px;
+    color: #23b205;
+}
+
+span.logo-txt {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0;
+    color: deeppink;
+    font-weight: bold;
+    font-family: math;
+}
+
+ .navbarlist {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+
+ .navbarlist li {
+    margin: 0px 19px;
+}
+
+ .navbarlist li a {
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: black;
+    font-weight: 700;
+    font-family: math;
+    transition: all 0.7s;
+}
+
+ .navbarlist li a:hover{
+    color: #23b205;
+}
+
+button.navcBtn {
+    width: 100px;
+    position: sticky;
+    right: 40px;
+    border: 2px solid #23b205;
+    height: 40px;
+    background: no-repeat;
+    outline: none;
+    border-radius: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.7s;
+    z-index: 10;
+}
+button.navcBtn:hover{
+    background: #23b205;
+    color: aliceblue;
+}
+i.fa-bars {
+    font-size: 35px;
+    position: absolute;
+    right: 180px;
+    cursor: pointer;
+    display: none;
+}
+/*Navigation end */
+section#about {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+}
+.left-side-about {
+    width: 45%;
+    height: 100%;
+    margin: 0px 100px;
+    text-align: center;
+}
+.about-content {
+    position: absolute;
+    top: 43px;
+    width: 40%;
+
+}
+p.left-about {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    top: 20px;
+    font-family: monospace;
+    width: 120px;
+    height: 60px;
+   color: #00be25;
+}
+p.left-about::before{
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00be25;
+    border-radius: 50%;
+}
+h1.about-head {
+    font-size: 45px;
+    width: 140px;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.left-side-about h2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 500;
+    position: relative;
+    left: -68px;
+    top: 210px;
+    text-transform: capitalize;
+}
+span.creat {
+    color: #00be33;
+}
+
+span.design {
+    color: #00be25;
+}
+p.txt {
+    font-size: 18px;
+    text-align: left;
+    width: 380px;
+    position: relative;
+    left: 0px;
+    top: 190px;
+    line-height: 25px;
+}
+.right-side-about {
+    width: 60%;
+    position: relative;
+    right: 0px;
+    height: 60%;
+    top: 140px;
+    z-index: 1;
+}
+.right-side-about::before{
+    content: '';
+    position: absolute;
+    width: 66%;
+    height: 100%;
+    top: -30px;
+    left: 0;
+    background: #05e74c;
+    z-index: -1;
+}
+.right-side-about img {
+    width: 60%;
+    height: 100%;
+}
+
+a.type-txt {
+    position: absolute;
+    left: 0;
+    font-size: 22px;
+    top: 173px;
+    font-family: ui-monospace;
+    color: #00be33;
+    text-transform: capitalize;
+    text-decoration: none;
+    cursor: auto;
+    font-weight: bold;
+    font-family: math;
+}
+.btn-3d{
+    text-align: center;
+       border-radius: 24px;
+       padding: 20px;
+       min-height: 130px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       position: relative;
+       overflow: hidden;
+       top: 70px;
+       z-index: 10;
+}
+
+button.skill-btn {
+    transform:  rotate(340deg) skew(22deg);
+    transform-style: preserve-3d;
+    position: relative;
+    list-style: none;
+    width: 100px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+button.skill-btn::before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: -5px;
+    width: 100%;
+    height: 10px;
+    background: #2a2a2a;
+    transform: skewX(-41deg);
+}
+button.skill-btn::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: #2a2a2a;
+    transform: skewY(-49deg);
+}
+button.skill-btn span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2a2a2a;
+    color: #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.1s ease-out;
+}
+button.skill-btn:hover span {
+    z-index: 1000;
+    transition: .3s;
+    color: #fff;
+}
+
+button.skill-btn:hover span:nth-child(5) {
+    transform: translate(40px, -40px);
+    opacity: 1;
+}
+
+button.skill-btn:hover span:nth-child(4) {
+    transform: translate(30px, -30px);
+    opacity: .8;
+}
+
+button.skill-btn:hover span:nth-child(3) {
+    transform: translate(20px, -20px);
+    opacity: .6;
+}
+
+button.skill-btn:hover span:nth-child(2) {
+    transform: translate(10px, -10px);
+    opacity: .4;
+}
+
+button.skill-btn:hover span:nth-child(1) {
+    transform: translate(0px, 0px);
+    opacity: .2;
+}
+
+button.skill-btn:active span:nth-child(5) {
+    transform: translate(20px, -20px);
+    opacity: 1;
+}
+
+button.skill-btn:active span:nth-child(4) {
+    transform: translate(15px, -15px);
+}
+
+button.skill-btn:active span:nth-child(3) {
+    transform: translate(10px, -10px);
+}
+
+button.skill-btn:active span:nth-child(2) {
+    transform: translate(5px, -5px);
+}
+
+button.skill-btn:active span:nth-child(1) {
+    transform: translate(0px, 0px);
+}
+
+button.skill-btn:nth-child(1):hover span {
+    background: #52E19F;
+}
+/*About Section end */
+.conter {
+    position: relative;
+    top: 50px;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.client {
+    width: 24%;
+    position: absolute;
+    left: 0;
+}
+
+h1#client {
+    font-size: 50px;
+    font-family: math;
+    color: #2196F3;
+}
+
+h5 {
+    font-size: 25px;
+    font-family: math;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.project {
+    width: 28%;
+    position: absolute;
+    left: 290px;
+}
+
+h1#pro {
+    font-size: 50px;
+    font-family: math;
+    color: #2196F3;
+}
+
+.review {
+    width: 20%;
+    position: absolute;
+    right: 0;
+}
+
+h1#review {
+    font-size: 50px;
+    font-family: math;
+    color: #2196F3;
+}
+/*Count page end */
